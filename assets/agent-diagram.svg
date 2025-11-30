@@ -1,0 +1,161 @@
+<svg width="1386pt" height="209pt" viewBox="0.00 0.00 1386.00 209.00"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 205)">
+        <polygon fill="#333537" stroke="none" points="-4,4 -4,-205 1382.19,-205 1382.19,4 -4,4"></polygon>
+        <g id="clust1" class="cluster">
+            <title>cluster_SelfHealPipeline (Sequential Agent)</title>
+            <path fill="#333537" stroke="#ffffff"
+                d="M20,-8C20,-8 1358.19,-8 1358.19,-8 1364.19,-8 1370.19,-14 1370.19,-20 1370.19,-20 1370.19,-181 1370.19,-181 1370.19,-187 1364.19,-193 1358.19,-193 1358.19,-193 20,-193 20,-193 14,-193 8,-187 8,-181 8,-181 8,-20 8,-20 8,-14 14,-8 20,-8"></path>
+            <text xml:space="preserve" text-anchor="middle" x="689.09" y="-176.4"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">SelfHealPipeline (Sequential Agent)</text>
+        </g>
+        <!-- ContentExtractorAgent -->
+        <g id="node1" class="node">
+            <title>ContentExtractorAgent</title>
+            <ellipse fill="#0f5223" stroke="#0f5223" cx="129.21" cy="-115" rx="113.21" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="129.21" y="-110.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 ContentExtractorAgent</text>
+        </g>
+        <!-- language_detector -->
+        <g id="node2" class="node">
+            <title>language_detector</title>
+            <ellipse fill="none" stroke="#cccccc" cx="372.31" cy="-115" rx="93.89" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="372.31" y="-110.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 language_detector</text>
+        </g>
+        <!-- ContentExtractorAgent&#45;&gt;language_detector -->
+        <g id="edge1" class="edge">
+            <title>ContentExtractorAgent-&gt;language_detector</title>
+            <path fill="none" stroke="#cccccc" d="M242.65,-115C250.74,-115 258.88,-115 266.93,-115"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="266.71,-118.5 276.71,-115 266.71,-111.5 266.71,-118.5"></polygon>
+        </g>
+        <!-- docker_file_builder -->
+        <g id="node3" class="node">
+            <title>docker_file_builder</title>
+            <ellipse fill="none" stroke="#cccccc" cx="601.46" cy="-115" rx="99.26" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="601.46" y="-110.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 docker_file_builder</text>
+        </g>
+        <!-- language_detector&#45;&gt;docker_file_builder -->
+        <g id="edge2" class="edge">
+            <title>language_detector-&gt;docker_file_builder</title>
+            <path fill="none" stroke="#cccccc" d="M466.69,-115C474.59,-115 482.62,-115 490.64,-115"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="490.41,-118.5 500.41,-115 490.41,-111.5 490.41,-118.5"></polygon>
+        </g>
+        <!-- code_executor -->
+        <g id="node4" class="node">
+            <title>code_executor</title>
+            <ellipse fill="none" stroke="#cccccc" cx="816.13" cy="-88" rx="79.41" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="816.13" y="-83.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 code_executor</text>
+        </g>
+        <!-- docker_file_builder&#45;&gt;code_executor -->
+        <g id="edge3" class="edge">
+            <title>docker_file_builder-&gt;code_executor</title>
+            <path fill="none" stroke="#cccccc"
+                d="M684.08,-104.64C700.64,-102.54 718.04,-100.33 734.57,-98.23"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="734.86,-101.72 744.34,-96.99 733.98,-94.77 734.86,-101.72"></polygon>
+        </g>
+        <!-- google_search -->
+        <g id="node8" class="node">
+            <title>google_search</title>
+            <path fill="none" stroke="#cccccc"
+                d="M861.31,-160C861.31,-160 770.95,-160 770.95,-160 764.95,-160 758.95,-154 758.95,-148 758.95,-148 758.95,-136 758.95,-136 758.95,-130 764.95,-124 770.95,-124 770.95,-124 861.31,-124 861.31,-124 867.31,-124 873.31,-130 873.31,-136 873.31,-136 873.31,-148 873.31,-148 873.31,-154 867.31,-160 861.31,-160"></path>
+            <text xml:space="preserve" text-anchor="middle" x="816.13" y="-137.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🔧 google_search</text>
+        </g>
+        <!-- docker_file_builder&#45;&gt;google_search -->
+        <g id="edge7" class="edge">
+            <title>docker_file_builder-&gt;google_search</title>
+            <path fill="none" stroke="#cccccc"
+                d="M684.08,-125.36C708.91,-128.51 735.65,-131.91 758.45,-134.8"></path>
+        </g>
+        <!-- log_analyzer -->
+        <g id="node5" class="node">
+            <title>log_analyzer</title>
+            <ellipse fill="none" stroke="#cccccc" cx="1009.71" cy="-34" rx="72.98" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="1009.71" y="-29.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 log_analyzer</text>
+        </g>
+        <!-- code_executor&#45;&gt;log_analyzer -->
+        <g id="edge4" class="edge">
+            <title>code_executor-&gt;log_analyzer</title>
+            <path fill="none" stroke="#cccccc"
+                d="M866.97,-73.95C892.19,-66.84 922.98,-58.16 949.41,-50.71"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="950.31,-54.1 958.99,-48.01 948.41,-47.36 950.31,-54.1"></polygon>
+        </g>
+        <!-- build_docker_image -->
+        <g id="node9" class="node">
+            <title>build_docker_image</title>
+            <path fill="none" stroke="#cccccc"
+                d="M1072,-106C1072,-106 947.42,-106 947.42,-106 941.42,-106 935.42,-100 935.42,-94 935.42,-94 935.42,-82 935.42,-82 935.42,-76 941.42,-70 947.42,-70 947.42,-70 1072,-70 1072,-70 1078,-70 1084,-76 1084,-82 1084,-82 1084,-94 1084,-94 1084,-100 1078,-106 1072,-106"></path>
+            <text xml:space="preserve" text-anchor="middle" x="1009.71" y="-83.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🔧 build_docker_image</text>
+        </g>
+        <!-- code_executor&#45;&gt;build_docker_image -->
+        <g id="edge8" class="edge">
+            <title>code_executor-&gt;build_docker_image</title>
+            <path fill="none" stroke="#cccccc" d="M895.88,-88C908.89,-88 922.32,-88 935.19,-88"></path>
+        </g>
+        <!-- run_docker_container -->
+        <g id="node10" class="node">
+            <title>run_docker_container</title>
+            <path fill="none" stroke="#cccccc"
+                d="M1075.87,-160C1075.87,-160 943.54,-160 943.54,-160 937.54,-160 931.54,-154 931.54,-148 931.54,-148 931.54,-136 931.54,-136 931.54,-130 937.54,-124 943.54,-124 943.54,-124 1075.87,-124 1075.87,-124 1081.87,-124 1087.87,-130 1087.87,-136 1087.87,-136 1087.87,-148 1087.87,-148 1087.87,-154 1081.87,-160 1075.87,-160"></path>
+            <text xml:space="preserve" text-anchor="middle" x="1009.71" y="-137.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🔧 run_docker_container</text>
+        </g>
+        <!-- code_executor&#45;&gt;run_docker_container -->
+        <g id="edge9" class="edge">
+            <title>code_executor-&gt;run_docker_container</title>
+            <path fill="none" stroke="#cccccc"
+                d="M866.97,-102.05C890.25,-108.61 918.28,-116.51 943.24,-123.55"></path>
+        </g>
+        <!-- healer -->
+        <g id="node6" class="node">
+            <title>healer</title>
+            <ellipse fill="none" stroke="#cccccc" cx="1170.57" cy="-34" rx="46.69" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="1170.57" y="-29.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 healer</text>
+        </g>
+        <!-- log_analyzer&#45;&gt;healer -->
+        <g id="edge5" class="edge">
+            <title>log_analyzer-&gt;healer</title>
+            <path fill="none" stroke="#cccccc" d="M1083.16,-34C1092.94,-34 1102.85,-34 1112.31,-34"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="1112.07,-37.5 1122.07,-34 1112.07,-30.5 1112.07,-37.5"></polygon>
+        </g>
+        <!-- fixer -->
+        <g id="node7" class="node">
+            <title>fixer</title>
+            <ellipse fill="none" stroke="#cccccc" cx="1307.73" cy="-34" rx="41.34" ry="18"></ellipse>
+            <text xml:space="preserve" text-anchor="middle" x="1307.73" y="-29.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 fixer</text>
+        </g>
+        <!-- healer&#45;&gt;fixer -->
+        <g id="edge6" class="edge">
+            <title>healer-&gt;fixer</title>
+            <path fill="none" stroke="#cccccc" d="M1217.7,-34C1229.64,-34 1242.58,-34 1254.79,-34"></path>
+            <polygon fill="#cccccc" stroke="#cccccc"
+                points="1254.71,-37.5 1264.71,-34 1254.71,-30.5 1254.71,-37.5"></polygon>
+        </g>
+        <!-- fix_suggester -->
+        <g id="node11" class="node">
+            <title>fix_suggester</title>
+            <path fill="none" stroke="#cccccc"
+                d="M1350.19,-106C1350.19,-106 1265.26,-106 1265.26,-106 1259.26,-106 1253.26,-100 1253.26,-94 1253.26,-94 1253.26,-82 1253.26,-82 1253.26,-76 1259.26,-70 1265.26,-70 1265.26,-70 1350.19,-70 1350.19,-70 1356.19,-70 1362.19,-76 1362.19,-82 1362.19,-82 1362.19,-94 1362.19,-94 1362.19,-100 1356.19,-106 1350.19,-106"></path>
+            <text xml:space="preserve" text-anchor="middle" x="1307.73" y="-83.8"
+                font-family="Times,serif" font-size="14.00" fill="#cccccc">🤖 fix_suggester</text>
+        </g>
+        <!-- healer&#45;&gt;fix_suggester -->
+        <g id="edge10" class="edge">
+            <title>healer-&gt;fix_suggester</title>
+            <path fill="none" stroke="#cccccc"
+                d="M1203.94,-46.93C1220.89,-53.71 1241.93,-62.11 1260.56,-69.55"></path>
+        </g>
+    </g>
+</svg>
