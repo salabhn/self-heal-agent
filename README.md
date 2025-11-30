@@ -123,9 +123,9 @@ The sandbox path defaults to `./sandbox_folder` (configurable in `config.py`).
 ## Usage
 
 To run the Self-Heal Agent:
+From project directory
 
 ```bash
-cd self_heal_agent/
 adk web
 ```
 
